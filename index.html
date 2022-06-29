@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road SUIT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https://fonts.googleapis.com/css2？family=Shippori+Mincho+B1:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/smartstyle.css">
+</head>
+<body>
+    <header class="header-pc">
+        <div class="header-logo">
+            <img src="img/logo.png" alt="" class="logo_img">
+        </div>
+        <nav class="nav-menu">
+            <ul class="page-link">
+                <li>
+                    <a href="#">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#">BRAND NAME</a>
+                </li>
+                <li>
+                    <a href="#">BRAND LIST</a>
+                </li>
+                <li>
+                    <a href="#">STAFF</a>
+                </li>
+                <li>
+                    <a href="#">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <header class="header-sp">
+        <!--ここからスマホ用ハンバーガーメニュー-->
+        <div class="logo">
+            <img src="img/logo.png" alt="" class="logo_img">
+        </div>
+        <!-- ハンバーガーメニュー部分 -->
+        <div class="nav">
+            <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+            <input id="drawer_input" class="drawer_hidden" type="checkbox">
+            <!-- ハンバーガーアイコン -->
+            <label for="drawer_input" class="drawer_open"><span></span></label>
+            <!-- メニュー -->
+            <nav class="nav_content">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#">ABOUT</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">BRAND NAME</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">BRAND LIST</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">STAFF</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="contents">
+            <div class="about">
+                <img src="img/top.png" alt="" class="top_img">
+                <img src="img/top_sp.png" alt="" class="top_sp_img">
+            </div>
+            <div class="brand-name">
+                <div class="brand-neme-box">
+                    <h1 class="h1">~Brand Name~</h1>
+                    <p class="brand-name-p">「Road×SUIT」は、スーツを単に販売するだけではなく、その名の通りRoadとスーツを掛け合わせることで”相乗効果”を表し
+                    タグのロゴにも利用されている「∞」無限のマークがありますがRoadのスーツを着た方へ、”可能性”が無限大に広がりますようにという願いを込めて「Road×SUIT」と名付けました</p>
+                </div>
+            </div>
+            <div class="brand-list">
+                <div class="brand-list-box">
+                    <h1 class="h1">お取り扱いブランド</h1>
+                    <section class="content">
+                        <div class="item">
+                            <img src="img/brandlogo01.png" alt="ARISTON" class="boxs">
+                        </div>
+                        <div class="item">
+                            <img src="img/brandlogo02.png" alt="Ermenegildo Zegna" class="boxs">
+                        </div>
+                        <div class="item">
+                            <img src="img/brandlogo03.png" alt="Lona Piama" class="boxs">
+                        </div>
+                        <div class="item">
+                            <img src="img/brandlogo04.png" alt="DORMEUIL" class="boxs">
+                        </div>
+                        <div class="item">
+                            <img src="img/brandlogo05.png" alt="PERENNIAL" class="boxs">
+                        </div>
+                        <div class="item">
+                            <img src="img/brandlogo06.png" alt="DRAGO" class="boxs">
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="staff">
+                <div class="staff-box">
+                    <h1 class="h1">STAFF</h1>
+                    <div class="staff-top">
+                        <img src="img/yoshida.png" alt="">
+                        <p id="chief-text">チーフマネージャー</p>
+                        <p class="ja-name">吉田 太郎</p>
+                        <p class="en-name">Taro Yoshida</p>
+                    </div>
+                    <div class="staff-bottom">
+                        <div class="staff-bottom-left">
+                            <img src="img/kawai.png" alt="">
+                            <p class="ja-name">河合 昌弘</p>
+                            <p class="en-name">Masahiro Kawai</p>
+                        </div>
+                        <div class="staff-bottom-center">
+                            <img src="img/hisada.png" alt="">
+                            <p class="ja-name">久田 剛</p>
+                            <p class="en-name">Go Hisada</p>
+                        </div>
+                        <div class="staff-bottom-right">
+                            <img src="img/okumura.png" alt="">
+                            <p class="ja-name">奥村 優里</p>
+                            <p class="en-name">Yuri Okumura</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="contact-box">
+                    <h1 class="h1">お問い合わせ</h1>
+                    <div class="tell-menu">
+                        <p class="tell">ご予約電話番号</p>
+                        <p class="tell-number">03-6868-8678</p>
+                        <p class="holiday">(月曜日~土曜日 am10:00~pm09:00)</p>
+                    </div>
+                    <div class="post-menu">
+                        <p class="shop">店舗住所</p>
+                        <p class="post">〒135-0064</p>
+                        <p class="address">東京都江東区青海2丁目7 The SOHO312</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-box">
+            <img src="img/logo.png" alt="" class="footer-logo_img">
+            <div class="copyright">Copyright ©︎ 2022 Road inc. All RIGHTS RESERVED</div>
+        </div>
+    </footer>
+</body>
+</html>

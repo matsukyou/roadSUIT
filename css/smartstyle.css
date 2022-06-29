@@ -1,0 +1,245 @@
+@media screen and (max-width: 540px) {
+    /*============================================
+    全体のレイアウト
+    ============================================*/
+    
+    footer {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    h1 {
+        font-size: clamp(20px,3vw,25px);
+        letter-spacing: 0.3em
+    }
+    .h1 {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    
+    /*============================================
+    ヘッダー
+    ============================================*/
+	/* 480px以下に適用されるCSS（スマホ用） */
+    .header-sp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        background: black;
+        font-family: 'poppins', sans-serif;
+        font-size: 15px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+    
+    /* ここから下がハンバーガーメニューに関するCSS */
+    
+    /* チェックボックスを非表示にする */
+    .drawer_hidden {
+        display: none;
+    }
+    /* ハンバーガーアイコンの設置スペース */
+    .drawer_open {
+        display: flex;
+        height: 60px;
+        width: 60px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 100;/* 重なり順を一番上にする */
+        cursor: pointer;
+    }
+
+    /* ハンバーガーメニューのアイコン */
+    .drawer_open span,
+    .drawer_open span:before,
+    .drawer_open span:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+        background: white;
+        transition: 0.5s;
+        position: absolute;
+    }
+    
+    /* 三本線の一番上の棒の位置調整 */
+    .drawer_open span:before {
+        bottom: 8px;
+    }
+    
+    /* 三本線の一番下の棒の位置調整 */
+    .drawer_open span:after {
+        top: 8px;
+    }
+    
+    /* アイコンがクリックされたら真ん中の線を透明にする */
+    #drawer_input:checked ~ .drawer_open span {
+        background: rgba(255, 255, 255, 0);
+    }
+    
+    /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+    #drawer_input:checked ~ .drawer_open span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    
+    #drawer_input:checked ~ .drawer_open span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    
+    /* メニューのデザイン*/
+    .nav_content {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 100%; /* メニューを画面の外に飛ばす */
+        z-index: 99;
+        background: #232323;
+        transition: .5s;
+    }
+    
+    /* メニュー黒ポチを消す */
+    .nav_list {
+        list-style: none;
+        color: white;
+    }
+    
+    .nav_list ul li {
+        color: white;
+    }
+    /* アイコンがクリックされたらメニューを表示 */
+    #drawer_input:checked ~ .nav_content {
+        left: 0;/* メニューを画面に入れる */
+    }
+
+    .nav_item a {
+        text-decoration: none;
+        color: white;
+        font-size: 35px;
+    }
+
+    .header-pc {
+        display: none;
+    }
+
+    /*============================================
+    ABOUT
+    ============================================*/
+    .about img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .top_img {
+        display: none;
+    }
+    /*============================================
+    ブランドネーム
+    ============================================*/
+    .brand-name-h1 {
+        margin-bottom: 60px;
+    }
+
+    .brand-name-p {
+        font-size: 15px;
+    }
+
+    .brand-neme-box {
+        width: 80%;
+    }
+
+    /*============================================
+    ↓↓ブランドリスト↓↓
+    ============================================*/
+
+    .brand-list-box {
+        width: 80%;
+    }
+
+    .content {
+        display: block;
+    }
+
+    .item {
+        width: 60%;
+        margin: 0px auto;
+    }
+
+    .boxs {
+        width: 100%;
+    }
+
+
+    /*============================================
+    ↓↓スタッフ↓↓
+    ============================================*/
+    .staff {
+        height: 100%;
+    }
+
+    .staff-box {
+        width: 80%;
+    }
+
+    .staff-top {
+        margin-bottom: 20px;
+    }
+
+    .staff-top img {
+        width: 100%;
+    }
+
+    .staff-bottom-left {
+        margin-bottom: 20px;
+    }
+
+    .staff-bottom-center {
+        margin-bottom: 20px;
+    }
+
+    .staff-bottom {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    /*============================================
+    ↓↓お問い合わせ↓↓
+    ============================================*/
+
+    .contact-box {
+        width: 80%;
+    }
+
+
+    /*============================================
+    ↓↓フッター↓↓ 
+    ============================================*/
+
+    .footer-box {
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .copyright {
+        font-size: 7px;
+        color: white;
+        margin: 0;
+        padding: 20px 0 0 0;       
+    }
+
+    .footer-logo_img {
+        height: 60px;
+    }
+}

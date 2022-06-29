@@ -1,0 +1,298 @@
+/*============================================
+全般的なスタイル
+============================================*/
+
+body {
+    width: 100%;
+    background-color: #000000;
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Shippori Mincho B1', serif;
+}
+
+.header-pc {
+    width: 60%;
+    height: 120px;
+    margin: 0 auto;
+    font-family: 'poppins', sans-serif;
+    font-size: clamp(10px,3vw,15px);
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #000000;
+}
+
+/* 見出しを統一(h1) */
+h1 {
+    font-size: clamp(25px,3vw,45px);
+    letter-spacing: 0.3em
+}
+
+.h1 {
+    margin-bottom: 100px;
+}
+
+/*============================================
+↓↓ヘッダー↓↓
+============================================*/
+
+.header-logo {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.logo_img {
+    height: 66px;
+    display: block;
+    margin: auto;
+}
+
+.nav-menu {
+    height: 40px;
+    padding: 0 16px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page-link {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.about {
+    padding: 0 auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.top_img {
+    width: 100%;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+/*============================================
+↓↓ブランドネーム↓↓
+============================================*/
+
+.brand-name {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-neme-box {
+    width: 55%;
+    text-align:center
+}
+
+.brand-name-p {
+    font-size: 25px;
+}
+
+/*============================================
+↓↓ブランドリスト↓↓
+============================================*/
+
+.brand-list {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232323;
+}
+
+.brand-list-box {
+    width: 55%;
+    text-align:center
+}
+
+.brand-list-h1 {
+    margin-bottom: 100px;
+}
+
+.content {
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 33%;
+}
+
+.boxs {
+    width: 60%;
+    display: block;
+    margin: 30px auto;
+}
+
+/*============================================
+↓↓スタッフ↓↓
+============================================*/
+
+.staff {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.staff-box {
+    width: 55%;
+    text-align:center
+}
+
+.staff-top {
+    margin-bottom: 50px;
+}
+
+.staff-top img {
+    width: 70%;
+}
+
+.staff-bottom {
+    display: flex;
+}
+
+.staff-bottom img {
+    width: 95%;
+}
+
+#chief-text {
+    margin: 0 auto;
+    font-size: 10px;
+}
+
+.ja-name {
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.en-name {
+    margin: 0 auto;
+    font-size: 10px;
+    color: #727272;
+}
+
+/*============================================
+↓↓お問い合わせ↓↓
+============================================*/
+
+.contact {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232323;
+}
+
+.contact-box {
+    width: 55%;
+    text-align:center
+}
+
+.tell {
+    font-size: clamp(20px,3vw,30px);
+    letter-spacing: 0.3em
+}
+
+.tell-number {
+    font-size: clamp(25px,3vw,55px);
+    letter-spacing: 0.3em
+}
+
+.holiday {
+    font-size: clamp(20px,3vw,30px);
+    letter-spacing: 0.3em
+}
+
+.shop {
+    font-size: clamp(10px,3vw,20px);
+    letter-spacing: 0.3em
+}
+
+.post {
+    font-size: clamp(20px,3vw,30px);
+    letter-spacing: 0.3em
+}
+
+.address {
+    font-size: clamp(20px,3vw,30px);
+    letter-spacing: 0.3em
+}
+
+/*============================================
+↓↓フッター↓↓ 
+============================================*/
+
+
+
+@media screen and (min-width: 541px) {
+    .header-sp {
+        display: none;
+    }
+
+    .top_sp_img {
+        display: none
+    }
+    
+    .footer-box {
+        width: 60%;
+        margin: 20px auto;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        justify-content: space-between;
+    }
+    
+    .copyright {
+        color: white;
+        font-size: 11px;
+    }
+    
+    .footer-logo_img {
+        height: 80px;
+        display: flex;
+        align-items: left;
+    }
+}
